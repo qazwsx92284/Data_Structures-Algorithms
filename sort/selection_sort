@@ -10,7 +10,7 @@ function selectionSort(arr) {
         //each iteration set min to be first element
         let min = i;
         for(let j=i+1; j<arr.length; j++) {
-            // compare arr[i] with arr[j] and find min
+            // compare arr[min (=arr[i]) with arr[j] and find min
             if(arr[min]>arr[j]) {
                 min = j;
             }
