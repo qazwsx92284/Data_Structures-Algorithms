@@ -15,8 +15,10 @@ function selectionSort(arr) {
                 min = j;
             }
         }
-        // once nested loop is done, swap min to arr[i]. 
-        swap(arr, i, min);
+        // once nested loop is done, check if min is updated, if so swap min to arr[i]. 
+        if(i !== min) { 
+            swap(arr, i, min);
+        }
     }
     return arr;
 }
