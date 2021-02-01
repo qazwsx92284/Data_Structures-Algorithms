@@ -1,0 +1,16 @@
+function insertion_sort(arr) {
+    for(let i=1; i<arr.length; i++) {
+        let cur = arr[i];
+        let left = i-1;
+        for(let j=left; j>=0&&arr[j]>cur; j--) {
+            arr[j+1] = arr[j];
+            console.log(arr);
+            left--;
+        }
+        arr[left+1] = cur;
+        
+    }
+    return arr;
+}
+
+insertion_sort([3,1,2,5,4]);
